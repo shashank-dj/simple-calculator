@@ -1,0 +1,50 @@
+#calculator is my first project
+print(".................................CALCULATOR.............................")
+
+import sys
+import math
+#These libraries can make the code short
+print("libraries are imported")
+
+#Addition
+def add(a,b):
+  return a+b
+  
+#subtraction
+def sub(a,b):
+  return a-b
+  
+#multiplication
+def mul(a,b):
+  return a*b
+ 
+#division
+def div(a,b):
+  return a/b
+ 
+print("Select your choice")
+print("1.addition")
+print("2.subtraction")
+print("3.multiplication")
+print("4.division")
+
+
+choice = int(input("Enter your choice: "))
+
+n1 = int(input("Enter the number: "))
+n2 = int(input("Enter the number: "))
+
+if choice == 1:
+  print(n1,'+',n2,'=',addition(n1,n2))
+
+elif choice == 2:
+  print(n1,'-',n2,'=',subtract(n1,n2))
+
+elif choice == 3:
+  print(n1,'*',n2,'=',multiply(n1,n2))
+
+elif choice == 4:
+  print(n1,'/',n2,'=',division(n1,n2))
+
+else:
+  print("Invalid")
